@@ -1,13 +1,5 @@
 {
   "sections": {
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "show_product_recommendations": true,
-        "heading": "You may also like",
-        "show_vendor": false
-      }
-    },
     "main": {
       "type": "product-template",
       "blocks": {
@@ -54,15 +46,24 @@
         "enable_video_looping": false
       }
     },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "heading": "You may also like",
+        "show_vendor": false
+      }
+    },
     "product-back-to-collection": {
       "type": "product-back-to-collection",
+      "disabled": true,
       "settings": {
       }
     }
   },
   "order": [
-    "product-recommendations",
     "main",
+    "product-recommendations",
     "product-back-to-collection"
   ]
 }
